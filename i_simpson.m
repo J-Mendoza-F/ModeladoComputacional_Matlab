@@ -6,6 +6,7 @@ n=input('Número de particiones: ');
 
 h=(b-a)/n;
 
+X=zeros(1,n+1);
 f=@(x)x.^2;
 
 s1=0;
@@ -19,8 +20,6 @@ for i=1:n-1
         s1=s1+f(X(i+1));
     end
 end
-
 X(n+1)=b;
-
-I=h/3*(f(X(0))+4*s1+2*s2+f(X(n)));
+I=h/3*(f(X(1))+4*s1+2*s2+f(X(n+1)));
 fprintf('La integral es: ', I);
