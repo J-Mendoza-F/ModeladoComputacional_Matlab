@@ -1,5 +1,3 @@
-function i_rectangulo()
-
 a=input('Límite inferior del intervalo de integración: ');
 b=input('Límite superior del intervalo de integración: ');
 n=input('Número de particiones: ');
