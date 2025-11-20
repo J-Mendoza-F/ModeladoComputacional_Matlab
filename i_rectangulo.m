@@ -16,8 +16,8 @@ s=0;
 
 for i=0:n-1
     s=s+f(X(i+1));
-    X(i+2)=X(1)+(i+2)*h;
+    X(i+2)=X(1)+(i+1)*h;
 end
 I=h*s;
 
-fprint('La integral es: ', I);
+fprintf('La integral es: ', I);
