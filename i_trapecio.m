@@ -16,6 +16,8 @@ for i=1:n-1
     s=s+f(X(i+1));
 end
 
+X(n+1)=b;
+
 I=h/2*(f(X(1))+2*s+f(X(n+1)));
 
 fprintf('La integral es: %f\n', I);
