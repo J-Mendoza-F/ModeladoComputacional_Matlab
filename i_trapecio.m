@@ -8,13 +8,14 @@ h=(b-a)/n;
 f=@(x)x.^2;
 
 X=zeros(1,n+1);
+X(1)=a;
 s=0;
 
 for i=1:n-1
-    s=s+f(X(i+1));
     X(i+1)=X(i)+h;
+    s=s+f(X(i+1));
 end
 
-I=h/2[f(X(1))+2*s+f(X(n+1))];
+I=h/2*[f(X(1))+2*s+f(X(n+1))];
 
 fprintf('La integral es: %f\n', I);
