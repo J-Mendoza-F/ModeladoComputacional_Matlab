@@ -20,4 +20,4 @@ for i=0:n-1
 end
 I=h*s;
 
-fprintf('La integral es: ', I);
+fprintf('La integral es: %f\n', I);
